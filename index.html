@@ -1,0 +1,145 @@
+<!-- WhatsApp Widget -->
+<div id="whatswidget-widget-wrapper"class="whatswidget-widget-wrapper">
+	<div id="whatswidget-conversation"class="whatswidget-conversation">
+		<div class="whatswidget-conversation-header">
+			<div id="whatswidget-conversation-title"class="whatswidget-conversation-title">Fact Maven</div>
+		</div>
+		<div id="whatswidget-conversation-message"class="whatswidget-conversation-message">Hi, I'm reaching out to you after landing on your website.</div>
+		<div class="whatswidget-conversation-cta"> <a id="whatswidget-phone-desktop"target="_blank"href="https://api.whatsapp.com/send?phone=19145128484&text=Hi%20Ethan%2C%20I'm%20reaching%20out%20to%20you%20after%20landing%20on%20your%20website."class="whatswidget-cta whatswidget-cta-desktop">Send message</a> <a id="whatswidget-phone-mobile"target="_blank"href="https://api.whatsapp.com/send?phone=19145128484&text=Hi%20Ethan%2C%20I'm%20reaching%20out%20to%20you%20after%20landing%20on%20your%20website."class="whatswidget-cta whatswidget-cta-mobile">Send message</a></div>
+	</div>
+	<div id="whatswidget-conversation-message-outer"class="whatswidget-conversation-message-outer">
+	</div>
+	<div class="whatswidget-button-wrapper">
+		<div class="whatswidget-button"id="whatswidget-button">
+			<div style="margin:0 auto;width:38.5px;all:revert;"> <img class="whatswidget-icon"src="https://cdn.dorik.com/6145f340898d82001133a317/6145f677898d82001133a325/images/whatsapp-icon_ttpbgvl3.png"></div>
+		</div>
+	</div>
+	<script id="whatswidget-script"type="text/javascript">document.getElementById("whatswidget-conversation").style.display="none";document.getElementById("whatswidget-conversation").style.opacity="0"; var button=document.getElementById("whatswidget-button");button.addEventListener("click",openChat);var conversationMessageOuter=document.getElementById("whatswidget-conversation-message-outer");conversationMessageOuter.addEventListener("click",openChat);var chatOpen=!1;function openChat(){0==chatOpen?(document.getElementById("whatswidget-conversation").style.display="block",document.getElementById("whatswidget-conversation").style.opacity=100,chatOpen=!0,document.getElementById("whatswidget-conversation-message-outer").style.display="none"):(document.getElementById("whatswidget-conversation").style.opacity=0,document.getElementById("whatswidget-conversation").style.display="none",chatOpen=!1)}</script>
+</div>
+<style id="whatswidget-style">
+.whatswidget-widget-wrapper {
+	font-family: "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif !important;
+	font-size: 16px !important;
+	position: fixed !important;
+	bottom: 20px !important;
+	right: 30px !important;
+	z-index: 1001 !important
+}
+.whatswidget-conversation {
+	background-color: #e4dcd4 !important;
+	background-image: url('https://cdn.dorik.com/6145f340898d82001133a317/6145f677898d82001133a325/images/whatsapp-background_bszzwv77.png') !important;
+	background-repeat: repeat !important;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px !important;
+	width: 250px !important;
+	height: 300px !important;
+	border-radius: 10px !important;
+	transition-duration: 0.5s !important;
+	margin-bottom: 80px !important
+}
+.whatswidget-conversation-header {
+	color: #000000 !important;
+	background-color: #ffffff !important;
+	padding: 10px !important;
+	padding-left: 25px !important;
+	box-shadow: 0px 1px #00000029 !important;
+	font-weight: 600 !important;
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important
+}
+.whatswidget-conversation-message {
+	line-height: 1.2em !important;
+	color: #000000 !important;
+	background-color: #ffffff !important;
+	padding: 10px !important;
+	margin: 10px !important;
+	margin-left: 15px !important;
+	border-radius: 5px !important
+}
+.whatswidget-conversation-cta {
+	border-radius: 25px !important;
+	width: 175px !important;
+	font-size: 110% !important;
+	padding: 10px !important;
+	margin: 0 auto !important;
+	text-align: center !important;
+	background-color: #21b6a8 !important;
+	color: #000000 !important;
+	font-weight: bold !important;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 2.5px 10px !important;
+	transition: 1s !important;
+	position: absolute !important;
+	top: 62% !important;
+	left: 10% !important
+}
+.whatswidget-conversation-cta:hover {
+	transform: scale(0.8) !important;
+	filter: brightness(1.1) !important
+}
+.whatswidget-cta {
+	text-decoration: none !important;
+	color: #000000 !important
+}
+.whatswidget-cta-desktop {
+	display: none !important
+}
+.whatswidget-cta-mobile {
+	display: inherit !important
+}
+
+@media (min-width: 48em) {
+	.whatswidget-cta-desktop {
+		display: inherit !important
+	}
+	.whatswidget-cta-mobile {
+		display: none !important
+	}
+}
+.whatswidget-button-wrapper {
+	position: fixed !important;
+	bottom: 15px !important;
+	right: 15px !important
+}
+.whatswidget-button {
+	position: relative !important;
+	right: 0px !important;
+	background-color: #21b6a8 !important;
+	border-radius: 100% !important;
+	width: 60px !important;
+	height: 60px !important;
+	box-shadow: 2px 1px #0d630d63 !important;
+	transition: 1s !important
+}
+.whatswidget-icon {
+	width: 42px !important;
+	height: 42px !important;
+	position: absolute !important;
+	bottom: 10px !important;
+	left: 10px !important;
+}
+.whatswidget-button:hover {
+	filter: brightness(80%) !important;
+	transform: rotate(15deg) scale(1.15) !important;
+	cursor: pointer !important
+}
+
+@keyframes nudge {
+	20%,
+	100% {
+		transform: translate(0, 0)
+	}
+	0% {
+		transform: translate(0, 5px);
+		transform: rotate(2deg)
+	}
+	10% {
+		transform: translate(0, -5px);
+		transform: rotate(-2deg)
+	}
+}
+.whatswidget-link {
+	position: absolute !important;
+	bottom: 90px !important;
+	right: 5px !important;
+	opacity: 0.5 !important
+}
+</style>
